@@ -6,25 +6,30 @@
 body {
   line-height: 1.6;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 2em;
+  margin: 0;
+  padding: 0.25em;
 }
 
 .bg1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
+  align-items: center;
   background-color: #1f2937;
+  padding: 0.25em;
 }
 
 .bg2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
+  align-items: center;
   background-color: #e5e7eb;
+  padding: 0.25em;
 }
 
 .s1 {
@@ -32,7 +37,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 800px;
+  min-width: 25em;
 }
 
 .s2 {
@@ -40,13 +45,13 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 800px;
+  min-width: 25em;
   padding: 2em;
 }
 
 button {
   background-color: #3882f6;
-  border-radius: 5px;
+  border-radius: 0.5em;
   border-color: white;
   color: white;
 }
@@ -68,14 +73,15 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  min-width: 500px;
+  flex-wrap: wrap;
+  min-width: 25em;
 }
 
 .sign-up {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 350px;
+  max-width: 22em;
 }
 .c1,
 .c2,
@@ -94,7 +100,7 @@ ol {
   justify-content: space-around;
   list-style: none;
   gap: 1em;
-  min-width: 500px;
+  min-width: 25em;
 }
 
 .footer {
@@ -102,7 +108,10 @@ ol {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  min-width: 700px;
+  min-width: 20em;
+  max-width: 30em;
+  width: 100%;
+  flex-grow: 1;
   background-color: #3882f6;
   border-radius: 1em;
 }
@@ -131,6 +140,6 @@ p {
 }
 
 img {
-  border-radius: 5px;
+  border-radius: 0.5em;
   box-shadow: 3px 3px 2px #000;
 }
